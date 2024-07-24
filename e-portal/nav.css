@@ -1,0 +1,299 @@
+nav {
+    width: 100%;
+    height: 100px;
+    background-color:rgb(169, 232, 9);
+    position: relative;
+}
+
+nav .navContainer {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav .navContainer {
+        width: 100%;
+    }
+}
+
+nav .navContainer .ham_burger {
+    display: none;
+    width: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+nav .navContainer .ham_burger div {
+    width: 30px;
+    height: 2px;
+    background: #e1fa1e;
+    margin-bottom: 6px;
+}
+
+nav .navContainer .ham_burger div:last-child {
+    width: 15px;
+    margin-bottom: none;
+    background-color: #3255ca;
+}
+
+nav .navContainer .logo {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 730px) {
+    nav .navContainer .ham_burger {
+        display: block;
+    }
+
+    nav .navContainer .logo {
+        position: relative;
+        left: 100px;
+    }
+}
+
+nav .navContainer .logo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav .navContainer .logo a span {
+    color: #0b40ef;
+}
+
+nav .navContainer .nav_links {
+    width: 350px;
+}
+nav .navContainer .nav_links .searchForm {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+nav .navContainer .nav_links .searchForm form{
+    display: flex;
+}
+nav .navContainer .nav_links .searchForm form input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+}
+nav .navContainer .nav_links .searchForm form input:focus,
+nav .navContainer .nav_links .searchForm form input:hover{
+    border: 1px solid #5071df;
+    border-right: none;
+    
+}
+nav .navContainer .nav_links .searchForm form button{
+    width: 50px;
+    height: 40px;
+    color: #fff;
+    background: #5071df;
+    outline: none;
+    border: none;
+}
+nav .navContainer .nav_links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 730px) {
+    nav .navContainer .ham_burger {
+        display: block;
+    }
+
+    nav .navContainer .logo {
+        position: relative;
+        left: 60px;
+    }
+
+    nav .navContainer .nav_links {
+        display: none;
+    }
+}
+
+nav .navContainer .nav_links ul li a {
+    text-decoration: none;
+    color: #fff(105, 105, 105);
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.4s ease;
+}
+
+nav .navContainer .nav_links ul li a:hover {
+    color: #5071df;
+}
+
+/* Links 2 */
+nav .navContainer .nav_linksClick {
+    position: absolute;
+    top: 105px;
+    width: 95%;
+    background: #fff;
+    left: -50%;
+    transform: translateX(-50%);
+    height: 350px;
+    box-shadow: 2px 2px 10px #e1fa1e(117, 117, 117, 0.5);
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 2;
+
+}
+
+nav .navContainer .nav_linksClick .linkscontainer {
+    width: 95%;
+    position: relative;
+    top: 15px;
+    margin: 0 auto;
+}
+
+nav .navContainer .nav_linksClick .linkscontainer form input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #546fc9;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+nav .navContainer .nav_linksClick .linkscontainer form input:focus {
+    border: 1px solid #5071df;
+
+}
+
+nav .navContainer .nav_linksClick .linkscontainer form button {
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: #5071df;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+nav .navContainer .nav_linksClick .linkscontainer form button img {
+    width: 20px;
+}
+
+nav .navContainer .nav_linksClick .linkscontainer .line {
+    width: 100%;
+    height: 1px;
+    background-color: #696969;
+    margin-bottom: 10px;
+}
+
+nav .navContainer .nav_linksClick .linkscontainer .navlinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navContainer .nav_linksClick .linkscontainer .navlinks ul {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+nav .navContainer .nav_linksClick .linkscontainer .navlinks ul li {
+    background-color: #3255ca;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navContainer .nav_linksClick .linkscontainer .navlinks ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .navContainer .nav_linksClick .linkscontainer .navlinks ul li span {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Login Register */
+nav .navContainer .formMenu {
+    width: auto;
+}
+
+nav .navContainer .formMenu a {
+    padding: 15px 25px;
+    background: #5071df;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(80, 113, 223, 0.3);
+}
+
+nav .navContainer .formMenu a:first-child {
+    border: 2px solid #5071df;
+    color: #5071df;
+    background: none;
+    margin-right: 10px;
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+nav .navContainer .formMenu a:first-child:hover {
+    color: #fff;
+    background: #5071df;
+    box-shadow: 5px 5px 15px rgba(80, 113, 223, 0.3);
+
+}
+
+@media only screen and (max-width: 730px) {
+    nav .navContainer .ham_burger {
+        display: block;
+    }
+
+    nav .navContainer .logo {
+        position: relative;
+        left: 60px;
+    }
+
+    nav .navContainer .nav_links {
+        display: none;
+    }
+
+    nav .navContainer .formMenu a {
+        padding: 10px 15px;
+    }
+    nav .navContainer .formMenu {
+        position: relative;
+        right: 10px;
+}
+}

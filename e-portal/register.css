@@ -1,0 +1,145 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container .inner-container{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid rgba(153, 153, 153, 0.542);
+    border-radius: 10px;
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+.container .inner-container .left-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 30px;
+}
+.container .inner-container .left-container h2{
+  margin-top: 30px;
+  font-size: 22px;
+}
+.container .inner-container .left-container form .name{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .inner-container .left-container form .name .first-name{
+    margin-right: 10px;
+}
+.container .inner-container .left-container form .email{
+    margin-top: 20px;
+    width: 65%;
+}
+.container .inner-container .left-container form p{
+    margin-top: 5px;
+    font-size: 13px;
+    color: #777;
+}
+.container .inner-container .left-container form .password{
+    margin: 20px 0px;
+    margin-bottom: 60px;
+}
+.container .inner-container .left-container .content form a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.container .inner-container .left-container .content form button{
+    padding: 5px 20px;
+    float: right;
+    background-color: #5071df;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 3px 3px 10px #2a46a3;
+    transition: .5s;
+    cursor: pointer;
+}
+.container .inner-container .left-container .content form button:hover{
+    background-color: #2a46a3;
+}
+.container .inner-container .left-container .content form input{
+    padding: 10px 5px;
+    border: 0.5px solid rgba(153, 153, 153, 0.289);
+    border-radius: 5px;
+}
+.container .inner-container .left-container .content form input:hover::placeholder{
+    padding-left: 10px;
+    transition: .5s;
+}
+.container .inner-container .right-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .inner-container .right-container img{
+    height: 300px;
+}
+
+/* responsive media queries */
+
+@media (min-width:1200px){
+    .container .inner-container .left-container{
+        width: 65%;
+    }
+    .container .inner-container .right-container{
+        width: 35%;
+    }
+    .container .inner-container .right-container img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (min-width:990px) and (max-width:1200px){
+    .container .inner-container{
+        width: 90%;
+    }
+}
+@media (min-width:636px) and (max-width:990px){
+    .container .inner-container .right-container{
+        display: none;
+    }
+    .container .inner-container .left-container{
+        width: 100%;
+    }
+    .container .inner-container .left-container button{
+        margin-right: 30%;
+    }
+}
+@media (max-width:636px){
+    .container .inner-container{
+        width: 90%;
+        border: none;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.145);
+    }
+    .container .inner-container .left-container h2{
+        font-size: 18px;
+      }
+      .container .inner-container .right-container{
+          display: none;
+      }
+      .container .inner-container .left-container{
+          width: 100%;
+          margin-left: 10px;
+      }
+      .container .inner-container .left-container .password .confirm-password{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .container .inner-container .left-container .name .last-name{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .container .inner-container .left-container button{
+        margin-right: 10%;
+    }
+    }
